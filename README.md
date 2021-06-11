@@ -9,7 +9,7 @@ Question
  
 ## **Install RancherOS and enable auto resize disk:**
 
-[@install-rancher](https://github.com/dwsclass)
+[@install-rancher](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/install-rancher.yaml)
 
  
  **__________________________**
@@ -27,7 +27,7 @@ Question
 
 ## **How to disable debug, autologin, password capabilities ?**
  
- [@disable-capabilities](https://github.com/dwsclass)
+ [@disable-capabilities](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/disable-capabilities.yaml)
 
 ```
 1 - ros config validate -i disable-capabilities.yaml
@@ -38,7 +38,7 @@ Question
 
 ## **change default ssh port to 2222**
  
- [@change-ssh-port](https://github.com/dwsclass)
+ [@change-ssh-port](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/ssh.yaml)
 
 ```
 1 - ros config validate -i ssh.yaml
@@ -49,7 +49,7 @@ Question
 
 ## **Enable NFS service**
  
- [@nfs](https://github.com/dwsclass)
+ [@nfs](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/nfs.yaml)
 
 ```
 1 - ros config validate -i nfs.yaml
@@ -61,7 +61,7 @@ Question
 
 ## **Enable NodeExporter serivice**
  
- [@node-exporter](https://github.com/dwsclass)
+ [@node-exporter](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/node-exporter.yml)
 
 ```
 1 - ros config validate -i node-exporter.yaml
@@ -108,8 +108,10 @@ you should see following settings:
 
 BusyBox Console
 
+```
 /home
 /opt
 /var/lib/docker
 /var/lib/rancher
 /var/lib/kubelet
+```
