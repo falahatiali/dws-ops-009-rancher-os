@@ -75,7 +75,6 @@ Question
 
 ```
 1 - ros config set environment.TZ "Asia/Tehran"
-2 - ros config merge -i node-exporter.yaml
 ```
 
 You can edit following file:
