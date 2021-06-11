@@ -11,6 +11,11 @@ Question
 
 [@install-rancher](https://github.com/falahatiali/dws-ops-009-rancher-os/blob/master/install-rancher.yaml)
 
+```
+- ros config validate -i config.yaml
+-ros install -s -c config.yaml -d /dev/sda
+
+```
  
  **__________________________**
  
