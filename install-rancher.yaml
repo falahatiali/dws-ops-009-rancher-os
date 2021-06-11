@@ -1,0 +1,5 @@
+#cloud-config 
+ssh_authorizes_keys: 
+  - {public_key} # SET YOUR PUBLIC KEY HERE
+rancher: 
+  resize_device: /dev/sda

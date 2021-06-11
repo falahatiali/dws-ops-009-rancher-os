@@ -1,0 +1,4 @@
+#cloud-config
+rancher:
+  ssh:
+    port: 2222

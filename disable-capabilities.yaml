@@ -1,0 +1,8 @@
+#cloud-config
+rancher: 
+  recovery: false 
+  debug: false 
+  disable: 
+    - password 
+    - autologin
+    - debug

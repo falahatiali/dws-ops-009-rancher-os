@@ -1,0 +1,24 @@
+#cloud-config                                                                  
+write_files:                                                                   
+  - path: /etc/rc.local                                                        
+    permissions: "0755"                                                        
+    owner: root                                                                
+    content: |                                                                 
+      #!/bin/bash                                                              
+      mkdir -p /mnt/nfs-1                                                                                                         
+      cloud-init-execute                                                       
+rancher:                                                                       
+  services:                                                                    
+    nfs:                                                                       
+      image: d3fk/nfs-client                                                   
+      labels:                                                                  
+        io.rancher.os.after: console, preload-user-images                      
+        io.rancher.os.scope: system                                            
+      net: host                                                                
+      privileged: true                                                         
+      tty: true                                                                
+      restart: always                                                          
+      volumes:                                                                 
+        - /usr/bin/iptables:/sbin/iptables:ro                                  
+mounts:                                                                        
+- ["nfs_server_ip:/", "/mnt/nfs-1", "nfs4", ""]
